@@ -1,0 +1,194 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles */
+
+html {
+    box-sizing: border-box;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF7F0;
+    font-family: "Outfit", sans-serif;
+    color: #4A4947;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+    padding: 0;
+	outline: inherit;
+    font-size: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+nav {
+    border-radius: 25px;
+    background-color: #D8D2C2;
+    width: 1340px;
+    height: 90px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 80px;
+    width: 100%;
+    height: 275px;
+    display: flex;
+    align-items: end;
+}
+
+h2 {
+    font-weight: 700;
+    margin-top: 50px;
+    font-size: 36px;
+    color: #B17457;
+    height: 275px;
+    width: 100%;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+}
+
+#nav-items {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#icon {
+    font-size: 50px;
+    justify-content: start;
+    margin-left: 50px;
+}
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero {
+    width: 1340px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-text {
+    width: 600px;
+    height: 600px;
+}
+
+#logo {
+    width: 600px;
+    height: 600px;
+}
+
+#logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+#learn-more {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#action-text {
+    width: 100%;
+    height: 50px;
+    background-color: #D8D2C2;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#action-btn {
+    margin-top: 15px;
+    font-size: 33px;
+}
+
+.nav-item {
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.nav-item, .nav-item:visited, .nav-item:hover {
+    color: #B17457;
+}
