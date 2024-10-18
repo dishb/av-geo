@@ -67,6 +67,10 @@ body {
     color: #4A4947;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
 	background: none;
 	color: inherit;
