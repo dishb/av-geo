@@ -23,7 +23,7 @@ scrollDown.addEventListener('click', () => {
 
 // Nav items scroll down functionality
 navItems.forEach(navItem => {
-    item.addEventListener('click', () => {
+    navItem.addEventListener('click', () => {
         const targetId = navItem.textContent.toLowerCase();
         const targetElement = document.getElementById(targetId);
         targetElement.scrollIntoView();
