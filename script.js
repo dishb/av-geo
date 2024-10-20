@@ -15,7 +15,7 @@ scrollDown.addEventListener('click', () => {
 // Scroll to home functionality
 iconBtn.addEventListener('click', () => {
     nav.scrollIntoView();
-})
+});
 
 scrollDown.addEventListener('click', () => {
     content.scrollIntoView();
