@@ -222,7 +222,6 @@ h4 {
     background-color: #D8D2C2;
     height: 36.5vw;
     border-radius: 25px;
-    font-size: 2rem;
     color: #4A4947;
     display: flex;
     justify-content: center;
@@ -230,6 +229,7 @@ h4 {
 
 p {
     margin: 2vw;
+    font-size: 2rem;
 }
 
 .section-img {
