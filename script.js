@@ -1,4 +1,4 @@
-const nav = document.querySelector("nav");
+const nav = document.querySelector('nav');
 
 const showNav = () => {
     nav.classList.add("shown");
@@ -24,7 +24,18 @@ const handleNavItemClick = (ev) => {
     element.scrollIntoView();
 }
 
-const actionBtnClick = () => {
-    const about = document.querySelector('#about');
-    about.scrollIntoView();
+const actionBtnClick = () => { document.querySelector('#about').scrollIntoView() };
+
+const scrollUpBtn = document.querySelector('#scroll-up-btn');
+
+const hero = document.querySelector('#hero');
+
+const scrollUp = () => { document.querySelector('#hero').scrollIntoView() };
+
+window.onscroll = () => {
+    if (document.body.scrollTop >= hero.offsetHeight || document.documentElement.scrollTop >= hero.offsetHeight) {
+        scrollUpBtn.style.display = 'inline-block';
+    } else {
+        scrollUpBtn.style.display = 'none';
+    }
 }
