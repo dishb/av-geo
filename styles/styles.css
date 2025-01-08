@@ -92,6 +92,10 @@ nav {
     height: 100vh;
 }
 
+hr {
+    color: #4A4947
+}
+
 section {
     height: 100vh;
     width: 80%;
@@ -101,9 +105,14 @@ section {
 }
 
 h2 {
+    margin-top: 2rem;
     font-weight: 700;
     color: #B17457;
     font-size: 2.5rem;
+}
+
+iframe {
+    margin-top: 1rem;
 }
 
 #scroll-up-btn, #menu-btn {
@@ -124,22 +133,21 @@ h2 {
     position: absolute;
 }
 
-#nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 50%;
+#nav-page {
+    margin-top: 2rem;
     font-size: 2rem;
     font-weight: 700;
     color: #B17457;
     padding: 4rem 2rem;
 }
 
-#nav-bar > button {
+#nav-page > button {
     text-align: left;
+    display: block;
 }
 
 #hero-img {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     height: 45vh;
@@ -151,15 +159,22 @@ h2 {
 }
 
 #hero-text {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #hero-text > p {
+    margin-top: 1rem;
     font-weight: 700;
     font-size: 1.125rem;
     color: #B17457;
+}
+
+#action-btn {
+    margin-top: auto;
+    margin-bottom: 0.5rem;
 }
 
 #action-btn > p {
@@ -179,6 +194,7 @@ h2 {
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 .hidden {
