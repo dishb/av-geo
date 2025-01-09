@@ -1,32 +1,41 @@
-// Select all elements needed in the script
+const nav = document.querySelector('nav');
 
-const content = document.querySelector('#content');
-const scrollDown = document.querySelector("#action-btn");
-const iconBtn = document.querySelector('#icon-btn');
-const navBar = document.querySelector('nav');
-const navItems = document.querySelectorAll('.nav-item');
+const showNav = () => {
+    nav.classList.add("shown");
+    nav.classList.remove("hidden");
+}
 
-// Scroll down to content functionality
+const hideNav = () => {
+    nav.classList.add("hidden");
+    nav.classList.remove("shown");
+}
 
-scrollDown.addEventListener('click', () => {
-    content.scrollIntoView();
-});
+const handleMenuClick = () => {
+    if (nav.classList.contains("hidden")) {
+        showNav();
+    } else {
+        hideNav();
+    }
+}
 
-// Scroll to home functionality
-iconBtn.addEventListener('click', () => {
-    nav.scrollIntoView();
-});
+const handleNavItemClick = (ev) => {
+    hideNav();
+    const element = document.querySelector(`#${ev.target.innerText.toLowerCase()}`);
+    element.scrollIntoView();
+}
 
-scrollDown.addEventListener('click', () => {
-    content.scrollIntoView();
-});
+const actionBtnClick = () => { document.querySelector('#about').scrollIntoView() };
 
-// Nav items scroll down functionality
-navItems.forEach(navItem => {
-    navItem.addEventListener('click', () => {
-        const targetId = navItem.textContent.toLowerCase();
-        const targetElement = document.getElementById(targetId);
-        targetElement.scrollIntoView();
-    });
-});
+const scrollUpBtn = document.querySelector('#scroll-up-btn');
 
+const hero = document.querySelector('#hero');
+
+const scrollUp = () => { document.querySelector('#hero').scrollIntoView() };
+
+window.onscroll = () => {
+    if (document.body.scrollTop >= hero.offsetHeight || document.documentElement.scrollTop >= hero.offsetHeight) {
+        scrollUpBtn.style.display = 'inline-block';
+    } else {
+        scrollUpBtn.style.display = 'none';
+    }
+}
