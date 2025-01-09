@@ -204,3 +204,63 @@ iframe {
 .shown {
     display: block;
 }
+
+@media (min-width: 768px) {
+    #contact {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        width: 70%;
+    }
+
+    h2 {
+        margin-top: 4rem;
+        font-size: 3.25rem;
+    }
+
+    h1 {
+        font-size: 4.325rem;
+    }
+
+    #hero {
+        all: unset;
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #hero-img {
+        all: unset;
+        width: 40%;
+    }
+
+    #hero-text {
+        all: unset;
+        width: 40%;
+    }
+
+    #hero-text > p {
+        font-size: 1.625rem;
+    }
+
+    #action-btn {
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 0.5rem;
+    }
+
+    #menu-btn, #scroll-up-btn {
+        font-size: 2.5rem;
+    }
+
+    .section-text {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+}
