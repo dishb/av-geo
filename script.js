@@ -1,36 +1,32 @@
 const nav = document.querySelector('nav');
-
-const showNav = () => {
-    nav.classList.add("shown");
-    nav.classList.remove("hidden");
-}
-
-const hideNav = () => {
-    nav.classList.add("hidden");
-    nav.classList.remove("shown");
-}
+const actionBtn = document.getElementById('action-btn')
 
 const handleMenuClick = () => {
-    if (nav.classList.contains("hidden")) {
-        showNav();
+    if (nav.classList.contains('hidden')) {
+        nav.classList.add('shown');
+        nav.classList.remove('hidden');
+        actionBtn.classList.add('hidden');
+        actionBtn.classList.remove('shown');
     } else {
-        hideNav();
+        nav.classList.add('hidden');
+        nav.classList.remove('shown');
+        actionBtn.classList.add('shown');
+        actionBtn.classList.remove('hidden');
     }
 }
 
 const handleNavItemClick = (ev) => {
-    hideNav();
-    const element = document.querySelector(`#${ev.target.innerText.toLowerCase()}`);
+    nav.classList.add('hidden');
+    nav.classList.remove('shown');
+    const element = document.getElementById(`#${ev.target.innerText.toLowerCase()}`);
     element.scrollIntoView();
 }
 
-const actionBtnClick = () => { document.querySelector('#about').scrollIntoView() };
+const actionBtnClick = () => { document.getElementById('about').scrollIntoView() };
 
-const scrollUpBtn = document.querySelector('#scroll-up-btn');
+const scrollUpBtn = document.getElementById('scroll-up-btn');
 
-const hero = document.querySelector('#hero');
-
-const scrollUp = () => { document.querySelector('#hero').scrollIntoView() };
+const scrollUp = () => { document.getElementById('hero').scrollIntoView() };
 
 window.onscroll = () => {
     if (document.body.scrollTop >= hero.offsetHeight || document.documentElement.scrollTop >= hero.offsetHeight) {

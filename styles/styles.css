@@ -93,7 +93,7 @@ nav {
 }
 
 hr {
-    color: #4A4947
+    border: 2px solid #8A9A5B;
 }
 
 section {
@@ -109,6 +109,7 @@ h2 {
     font-weight: 700;
     color: #B17457;
     font-size: 2.5rem;
+    text-decoration: #8A9A5B underline;
 }
 
 iframe {
@@ -116,6 +117,7 @@ iframe {
 }
 
 #scroll-up-btn, #menu-btn {
+    color: #8A9A5B;
     font-size: 1.5rem;
     z-index: 99;
 }
@@ -179,9 +181,13 @@ iframe {
 
 #action-btn > p {
     background-color: #D8D2C2;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 5rem;
     border-radius: 10px;
     font-weight: 700;
+}
+
+#action-btn > i {
+    color: #8A9A5B;
 }
 
 #contact-form {
