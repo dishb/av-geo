@@ -116,6 +116,12 @@ iframe {
     margin-top: 1rem;
 }
 
+img {
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
 #scroll-up-btn, #menu-btn {
     color: #8A9A5B;
     font-size: 1.5rem;
@@ -209,6 +215,15 @@ iframe {
 
 .shown {
     display: block;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    overflow: hidden;
+    background-color: #D8D2C2;
+    border-radius: 10px;
 }
 
 @media (min-width: 768px) {
