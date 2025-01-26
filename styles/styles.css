@@ -222,8 +222,6 @@ img {
     justify-content: center;
     margin-top: 1rem;
     overflow: hidden;
-    background-color: #D8D2C2;
-    border-radius: 10px;
 }
 
 @media (min-width: 768px) {

@@ -18,7 +18,9 @@ const handleMenuClick = () => {
 const handleNavItemClick = (ev) => {
     nav.classList.add('hidden');
     nav.classList.remove('shown');
-    const element = document.getElementById(`#${ev.target.innerText.toLowerCase()}`);
+    console.log(ev);
+    console.log(ev.target.innerText.toLowerCase());
+    const element = document.getElementById(`${ev.target.innerText.toLowerCase()}`);
     element.scrollIntoView();
 }
 
